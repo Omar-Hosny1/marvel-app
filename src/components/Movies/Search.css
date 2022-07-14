@@ -1,0 +1,37 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #343741;
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+  height: 30px;
+  border-radius: 7px;
+  margin-top: 20px;
+  position: relative;
+}
+.search input {
+  margin-top: 0px;
+  background-color: #343741;
+  outline: none;
+  border: 1px solid white;
+  height: 20px;
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+}
+.search svg {
+  font-size: 25px;
+  color: white;
+  margin-left: 15px;
+}
+.search-title {
+  color: white;
+  font-size: 25px;
+  position: relative;
+}
+.search span {
+  position: absolute;
+  top: 0;
+}

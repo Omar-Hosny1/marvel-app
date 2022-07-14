@@ -1,0 +1,40 @@
+.favorite-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+.banner-img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.favorite-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 90px 0 0 0;
+  color: white;
+  top: 0;
+  text-transform: uppercase;
+}
+.no-items {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+  font-weight: 400;
+}
+@media (max-width: 468px) {
+  .favorite-title {
+    top: -70px;
+    font-size: 20px;
+  }
+  .no-items {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    margin-top: 50px;
+    font-weight: 400;
+  }
+}

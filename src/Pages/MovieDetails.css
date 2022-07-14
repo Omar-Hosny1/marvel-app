@@ -1,0 +1,8 @@
+.movie-details-main-container {
+  margin-left: 65px;
+}
+@media (max-width: 468px) {
+  .movie-details-main-container {
+    margin-left: 0;
+  }
+}

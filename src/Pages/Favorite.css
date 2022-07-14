@@ -1,0 +1,8 @@
+.favorite-main-container {
+  margin-left: 65px;
+}
+@media (max-width: 468px) {
+  .favorite-main-container {
+    margin-left: 0;
+  }
+}

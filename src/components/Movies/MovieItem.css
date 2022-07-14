@@ -1,0 +1,27 @@
+.movie-item {
+  object-fit: contain;
+  max-height: 200px;
+  margin: 10px;
+  transition: 0.3s;
+  border: 3px solid transparent;
+}
+
+.movie-item-horizontal {
+  transition: 0.3s;
+  display: flex;
+  margin: 10px;
+  width: 230px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+.movie-item:hover,
+.movie-item-horizontal:hover {
+  transform: scale(1.08);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 7px;
+}
+@media (max-width: 468px) {
+  .movie-item {
+    max-height: 140px;
+  }
+}

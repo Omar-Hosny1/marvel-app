@@ -1,0 +1,5 @@
+.container {
+  width: calc(100% - 65px);
+  left: 65px;
+  position: relative;
+}

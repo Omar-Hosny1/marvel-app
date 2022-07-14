@@ -1,0 +1,107 @@
+.home {
+  text-align: center;
+}
+.home-com {
+  background-image: url("./Images/Home-Image.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+
+  background-size: cover;
+}
+
+@keyframes backdrop {
+  0% {
+    right: 90px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+.backdrop-info {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 200px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  animation: backdropInfo forwards 0.7s ease;
+}
+@keyframes backdropInfo {
+  0% {
+    left: 50px;
+    opacity: 0;
+  }
+  100% {
+    left: 200px;
+    opacity: 1;
+  }
+}
+.backdrop-info h1 {
+  font-size: 50px;
+  min-width: 150px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+.backdrop-info span {
+  color: rgb(233, 233, 233);
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.trailer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.trailer svg {
+  background-color: #339ef0;
+  border-radius: 50%;
+  font-size: 35px;
+  margin-right: 10px;
+}
+.home-title-section {
+  position: relative;
+  top: 30px;
+  margin: 10px;
+  width: fit-content;
+  color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.home-title-section h1::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 40%;
+  left: 50%;
+  transition: 0.3s;
+  transform: translateX(-50%);
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(64, 0, 255),
+    rgb(0, 145, 255)
+  );
+}
+.home-title-section h1:hover::before {
+  width: 100%;
+}
+@media (max-width: 468px) {
+  .backdrop-info {
+    left: 0px;
+    margin-left: -150px;
+  }
+}
