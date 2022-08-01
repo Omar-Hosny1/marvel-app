@@ -1,12 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Data from "../components/Data/Data";
+
 const moviesSlice = createSlice({
   name: "movies",
-  initialState: { items: Data },
+  initialState: { items: [], isLoading: true, isErrorHappen: false },
   reducers: {
     pushAllMovies(state, action) {
-      state.items.push(...action.payload);
-      console.log(state.items);
+      state.items = action.payload;
+    },
+    moviesStopLoadingHandler: (state) => {
+      state.isLoading = false;
+    },
+    errorHandler: (state) => {
+      state.isErrorHappen = true;
     },
   },
 });
