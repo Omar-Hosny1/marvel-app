@@ -6,4 +6,4 @@ It's a web application where you can show all trending movies and you can add yo
 
 Open You Terminal and write "npm install" then "npm start"
 
-## Live-Server => https://enchanting-salamander-63dea9.netlify.app/
+## Live-Server => https://movies-website-oh.netlify.app
